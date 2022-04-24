@@ -33,7 +33,7 @@ public final class MethodUtils {
 	
 	private MethodUtils() { }
 	
-	public static final Method[] getInheritedMethods(Class<?> of, @Nullable List<Class<?>> done) {
+	public static final @NotNull Method[] getInheritedMethods(Class<?> of, @Nullable List<Class<?>> done) {
 		if (done==null) done = new ArrayList<Class<?>>(); // if the given list of already checked classes is null we set it to an empty list
 		final List<Method> methods = new ArrayList<Method>();
 		Class<?> temp = of;
@@ -55,7 +55,7 @@ public final class MethodUtils {
 	    return methods.toArray(new Method[methods.size()]);
 	}
 	
-	public static final Method[] getInheritedMethodsWithAnnotation(Class<?> of, @NotNull final Class<? extends Annotation> annotation, @Nullable List<Class<?>> done) {
+	public static final @NotNull Method[] getInheritedMethodsWithAnnotation(Class<?> of, @NotNull final Class<? extends Annotation> annotation, @Nullable List<Class<?>> done) {
 		if (done==null) done = new ArrayList<Class<?>>(); // if the given list of already checked classes is null we set it to an empty list
 		final List<Method> methods = new ArrayList<Method>();
 		Class<?> temp = of;
