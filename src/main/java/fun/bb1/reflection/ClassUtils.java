@@ -1,11 +1,11 @@
-package com.bb1.reflection;
+package fun.bb1.reflection;
+
+import static fun.bb1.exceptions.handler.ExceptionHandler.handle;
 
 import java.lang.reflect.Modifier;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-
-import static com.bb1.exceptions.handler.ExceptionHandler.handle;
 
 /**
  * 

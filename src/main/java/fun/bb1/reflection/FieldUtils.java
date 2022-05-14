@@ -1,4 +1,4 @@
-package com.bb1.reflection;
+package fun.bb1.reflection;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
