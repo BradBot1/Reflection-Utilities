@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>fun.bb1</groupId>
   <artifactId>reflection-utils</artifactId>
-  <version>1.1.0</version>
+  <version>1.1.1</version>
   <name>Reflection Uitlities</name>
   <description>Simple methods to make reflection easier</description>
   

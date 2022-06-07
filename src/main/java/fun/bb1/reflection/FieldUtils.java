@@ -50,7 +50,7 @@ public final class FieldUtils {
 		Class<?> temp = of;
 		do {
 			for (final Field field : temp.getDeclaredFields()) {
-				if (field.isAnnotationPresent(annotation)) continue; // not present
+				if (!field.isAnnotationPresent(annotation)) continue; // not present
 				fields.add(field);
 			}
 			temp = temp.getSuperclass();
